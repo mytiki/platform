@@ -1,0 +1,33 @@
+[submodule "capture/receipt"]
+	path = capture/receipt
+	url = https://github.com/mytiki/platform-cap-receipt
+[submodule "productization/orchestrate"]
+	path = productization/orchestrate
+	url = https://github.com/mytiki/platform-prd-orchestrate
+[submodule "capture/async"]
+	path = capture/async
+	url = https://github.com/mytiki/platform-cap-async
+[submodule "capture/bulk"]
+	path = capture/bulk
+	url = https://github.com/mytiki/platform-cap-bulk
+[submodule "compliance/trail/write"]
+	path = compliance/trail/write
+	url = https://github.com/mytiki/platform-cmp-trail-write
+[submodule "compliance/trail/endpoint"]
+	path = compliance/trail/endpoint
+	url = https://github.com/mytiki/platform-cmp-trail-endpoint
+[submodule "compliance/trail/library"]
+	path = compliance/trail/library
+	url = https://github.com/mytiki/platform-cmp-trail-library
+[submodule "monetization/storefront"]
+	path = monetization/storefront
+	url = https://github.com/mytiki/platform-mon-storefront
+[submodule "aggregation/lake"]
+	path = aggregation/lake
+	url = https://github.com/mytiki/platform-agg-lake
+[submodule "aggregation/library"]
+	path = aggregation/library
+	url = https://github.com/mytiki/platform-agg-library
+[submodule "aggregation/metadata"]
+	path = aggregation/metadata
+	url = https://github.com/mytiki/platform-agg-metadata
