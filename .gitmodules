@@ -4,9 +4,6 @@
 [submodule "productization/orchestrate"]
 	path = productization/orchestrate
 	url = https://github.com/mytiki/platform-prd-orchestrate
-[submodule "capture/async"]
-	path = capture/async
-	url = https://github.com/mytiki/platform-cap-async
 [submodule "capture/bulk"]
 	path = capture/bulk
 	url = https://github.com/mytiki/platform-cap-bulk
@@ -31,3 +28,15 @@
 [submodule "aggregation/metadata"]
 	path = aggregation/metadata
 	url = https://github.com/mytiki/platform-agg-metadata
+[submodule "aggregation/catalog"]
+	path = aggregation/catalog
+	url = https://github.com/mytiki/platform-agg-catalog
+[submodule "capture/async-endpoint"]
+	path = capture/async-endpoint
+	url = https://github.com/mytiki/platform-cap-async-endpoint
+[submodule "capture/async-stage"]
+	path = capture/async-stage
+	url = https://github.com/mytiki/platform-cap-async-stage
+[submodule "capture/async-write"]
+	path = capture/async-write
+	url = https://github.com/mytiki/platform-cap-async-write
