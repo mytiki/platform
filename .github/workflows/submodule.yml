@@ -1,0 +1,114 @@
+name: Submodule Sync
+on:
+  schedule:
+    - cron: "0 4 * * *"
+  workflow_dispatch: ~
+
+jobs:
+  submodule-sync:
+    name: Submodule Sync
+    runs-on: ubuntu-latest
+    steps:
+      - name: Agg Lake Sync
+        uses: mheap/submodule-sync-action@v1
+        with:
+          path: aggregation/lake
+          ref: main
+          pr_branch: automated-submodule-update
+          target_branch: main
+      - name: Agg Library Sync
+        uses: mheap/submodule-sync-action@v1
+        with:
+          path: aggregation/library
+          ref: main
+          pr_branch: automated-submodule-update
+          target_branch: main
+      - name: Agg Metadata Sync
+        uses: mheap/submodule-sync-action@v1
+        with:
+          path: aggregation/metadata
+          ref: main
+          pr_branch: automated-submodule-update
+          target_branch: main
+      - name: Agg Catalog Sync
+        uses: mheap/submodule-sync-action@v1
+        with:
+          path: aggregation/catalog
+          ref: main
+          pr_branch: automated-submodule-update
+          target_branch: main
+
+      - name: Cap Async-Endpoint Sync
+        uses: mheap/submodule-sync-action@v1
+        with:
+          path: capture/async-endpoint
+          ref: main
+          pr_branch: automated-submodule-update
+          target_branch: main
+      - name: Cap Async-Stage Sync
+        uses: mheap/submodule-sync-action@v1
+        with:
+          path: capture/async-stage
+          ref: main
+          pr_branch: automated-submodule-update
+          target_branch: main
+      - name: Cap Async-Write Sync
+        uses: mheap/submodule-sync-action@v1
+        with:
+          path: capture/async-stage
+          ref: main
+          pr_branch: automated-submodule-write
+          target_branch: main
+      - name: Cap Bulk Sync
+        uses: mheap/submodule-sync-action@v1
+        with:
+          path: capture/bulk
+          ref: main
+          pr_branch: automated-submodule-write
+          target_branch: main
+      - name: Cap Receipt Sync
+        uses: mheap/submodule-sync-action@v1
+        with:
+          path: capture/receipt
+          ref: main
+          pr_branch: automated-submodule-write
+          target_branch: main
+
+      - name: Cmp Trail Endpoint Sync
+        uses: mheap/submodule-sync-action@v1
+        with:
+          path: compliance/trail/endpoint
+          ref: main
+          pr_branch: automated-submodule-write
+          target_branch: main
+      - name: Cmp Trail Library Sync
+        uses: mheap/submodule-sync-action@v1
+        with:
+          path: compliance/trail/library
+          ref: main
+          pr_branch: automated-submodule-write
+          target_branch: main
+      - name: Cmp Trail Write Sync
+        uses: mheap/submodule-sync-action@v1
+        with:
+          path: compliance/trail/write
+          ref: main
+          pr_branch: automated-submodule-write
+          target_branch: main
+
+
+      - name: Mon Storefront Sync
+        uses: mheap/submodule-sync-action@v1
+        with:
+          path: monetization/storefront
+          ref: main
+          pr_branch: automated-submodule-write
+          target_branch: main
+
+      - name: Prd Orchestrate Sync
+        uses: mheap/submodule-sync-action@v1
+        with:
+          path: productization/orchestrate
+          ref: main
+          pr_branch: automated-submodule-write
+          target_branch: main
