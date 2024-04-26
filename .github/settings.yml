@@ -8,8 +8,9 @@ repository:
   homepage: https://mytiki.com/
   topics: mytiki, platform
   private: false
-  has_projects: true
+  has_projects: false
   has_discussions: false
+  has_issues: false
 
 teams:
   - name: sysadmin
