@@ -4,7 +4,7 @@ _extends: .github
 
 repository:
   name: platform
-  description: Turn data into revenue
+  description: Open-source data monetization platform. Build your data business, not infrastructure.
   homepage: https://mytiki.com
   topics: mytiki, platform
   private: false
